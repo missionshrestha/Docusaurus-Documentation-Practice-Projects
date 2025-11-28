@@ -1,7 +1,8 @@
 ---
 title: Pricing
-description: Compare TaskForge plans: Free, Pro, and Enterprise.
+description: "Compare TaskForge plans: Free, Pro, and Enterprise."
 ---
+
 
 # Pricing
 
