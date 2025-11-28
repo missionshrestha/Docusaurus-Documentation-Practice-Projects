@@ -1,47 +1,23 @@
 ---
-sidebar_position: 1
+id: intro
+title: Welcome to TaskForge
+sidebar_label: Introduction
+description: Learn what TaskForge is and how it helps teams manage projects from the command line and API.
 ---
 
-# Tutorial Intro
+TaskForge is a lightweight, developer-focused project management platform.  
+It combines a simple web dashboard, a powerful CLI, and a REST API so you can
+create projects, manage tasks, and automate workflows directly from your tooling.
 
-Let's discover **Docusaurus in less than 5 minutes**.
+:::info
+TaskForge is currently in beta. Features and APIs may change before the 1.0 release.
+:::
 
-## Getting Started
+With TaskForge you can:
 
-Get started by **creating a new site**.
+- Create and organize projects by team, client, or product line
+- Add, assign, and track tasks with due dates and statuses
+- Integrate with your CI/CD and automation scripts via the CLI and API
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+If you're new here, head next to the [Quickstart](./quickstart.md) to get TaskForge
+installed and create your first project.
