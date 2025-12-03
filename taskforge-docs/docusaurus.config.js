@@ -10,8 +10,8 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "My Site",
-  tagline: "Dinosaurs are cool",
+  title: "TaskForge Docs",
+  tagline: "Documentation for TaskForge",
   favicon: "img/favicon.ico",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -20,16 +20,19 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: "https://your-docusaurus-site.example.com",
+  url: "https://missionshrestha.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/",
+  baseUrl: "/Docusaurus-Documentation-Practice-Projects/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "missionshrestha", // Usually your GitHub org/user name.
+  projectName: "Docusaurus-Documentation-Practice-Projects", // Usually your repo name.
+  deploymentBranch: "gh-pages",// Branch used for GitHub Pages
 
+  trailingSlash: true,
+  
   onBrokenLinks: "throw",
 
   // Even if you don't use internationalization, you can use this field to set
@@ -51,7 +54,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+            "https://github.com/missionshrestha/Docusaurus-Documentation-Practice-Projects/tree/main/",
         },
         blog: {
           showReadingTime: true,
@@ -62,7 +65,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+            "https://github.com/missionshrestha/Docusaurus-Documentation-Practice-Projects/tree/main/",
           // Useful options to enforce blogging best practices
           onInlineTags: "warn",
           onInlineAuthors: "warn",
@@ -119,7 +122,7 @@ const config = {
             position: "left",
           },
           {
-            href: "https://github.com/your-username/taskforge-docs",
+            href: "https://github.com/missionshrestha/Docusaurus-Documentation-Practice-Projects",
             label: "GitHub",
             position: "right",
           },
@@ -175,7 +178,7 @@ const config = {
               },
               {
                 label: "GitHub",
-                href: "https://github.com/your-username/taskforge-docs",
+                href: "https://github.com/missionshrestha/Docusaurus-Documentation-Practice-Projects",
               },
             ],
           },
