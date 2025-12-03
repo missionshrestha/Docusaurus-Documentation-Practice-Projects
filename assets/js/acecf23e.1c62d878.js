@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunktaskforge_docs=globalThis.webpackChunktaskforge_docs||[]).push([[1903],{1912:o=>{o.exports=JSON.parse('{"blogBasePath":"/Docusaurus-Documentation-Practice-Projects/blog","blogTitle":"Blog","authorsListPath":"/Docusaurus-Documentation-Practice-Projects/blog/authors"}')}}]);

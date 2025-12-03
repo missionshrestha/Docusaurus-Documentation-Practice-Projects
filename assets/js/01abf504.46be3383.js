@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunktaskforge_docs=globalThis.webpackChunktaskforge_docs||[]).push([[6540],{2187:o=>{o.exports=JSON.parse('{"metadata":{"permalink":"/Docusaurus-Documentation-Practice-Projects/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

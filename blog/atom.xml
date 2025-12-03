@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://missionshrestha.github.io/Docusaurus-Documentation-Practice-Projects/blog/</id>
+    <title>TaskForge Docs Blog</title>
+    <updated>2025-01-10T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://missionshrestha.github.io/Docusaurus-Documentation-Practice-Projects/blog/"/>
+    <subtitle>TaskForge Docs Blog</subtitle>
+    <icon>https://missionshrestha.github.io/Docusaurus-Documentation-Practice-Projects/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[TaskForge v1.0.0-beta Release]]></title>
+        <id>https://missionshrestha.github.io/Docusaurus-Documentation-Practice-Projects/blog/v1-release/</id>
+        <link href="https://missionshrestha.github.io/Docusaurus-Documentation-Practice-Projects/blog/v1-release/"/>
+        <updated>2025-01-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Our first public beta release of TaskForge with CLI, API, and config improvements.]]></summary>
+        <content type="html"><![CDATA[<p>Today we're excited to ship <strong>TaskForge v1.0.0-beta</strong>—our first public beta release.</p>
+<p>This release focuses on solidifying the core experience: projects, tasks, CLI, and API.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="highlights">Highlights<a href="https://missionshrestha.github.io/Docusaurus-Documentation-Practice-Projects/blog/v1-release/#highlights" class="hash-link" aria-label="Direct link to Highlights" title="Direct link to Highlights" translate="no">​</a></h2>
+<ul>
+<li class="">🧰 New <code>taskforge init</code> flow with clearer prompts</li>
+<li class="">✅ Improved task listing and filtering in the CLI</li>
+<li class="">🔐 API authentication and rate limiting now enabled by default</li>
+<li class="">⚙️ Structured <code>taskforge.config.json</code> with environments support</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="breaking-changes">Breaking changes<a href="https://missionshrestha.github.io/Docusaurus-Documentation-Practice-Projects/blog/v1-release/#breaking-changes" class="hash-link" aria-label="Direct link to Breaking changes" title="Direct link to Breaking changes" translate="no">​</a></h2>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>This beta includes a breaking change to the way <code>projectId</code> is handled in
+<code>taskforge.config.json</code>. If you previously edited <code>projectId</code> by hand, please read the
+<a class="" href="https://missionshrestha.github.io/Docusaurus-Documentation-Practice-Projects/docs/reference/config-file/">Config File</a> docs carefully before upgrading.</p></div></div>
+<ul>
+<li class="">Projects created with older previews may need to be reinitialized.</li>
+<li class="">The CLI now refuses to run if <code>projectId</code> is missing or mismatched.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-updates">API updates<a href="https://missionshrestha.github.io/Docusaurus-Documentation-Practice-Projects/blog/v1-release/#api-updates" class="hash-link" aria-label="Direct link to API updates" title="Direct link to API updates" translate="no">​</a></h2>
+<ul>
+<li class="">All endpoints are now served from <code>https://api.taskforge.dev/v1</code>.</li>
+<li class="">Rate limits are enforced at <code>100 requests/minute</code> per API key.</li>
+<li class="">Error responses include consistent <code>error</code> and <code>message</code> fields.</li>
+</ul>
+<p>See the <a class="" href="https://missionshrestha.github.io/Docusaurus-Documentation-Practice-Projects/docs/reference/api-overview/">API Overview</a> for details and <code>curl</code> examples.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="cli-updates">CLI updates<a href="https://missionshrestha.github.io/Docusaurus-Documentation-Practice-Projects/blog/v1-release/#cli-updates" class="hash-link" aria-label="Direct link to CLI updates" title="Direct link to CLI updates" translate="no">​</a></h2>
+<ul>
+<li class=""><code>taskforge task add</code> now accepts <code>--assignee</code> and <code>--due</code> flags.</li>
+<li class=""><code>taskforge task list</code> adds a <code>--status</code> filter.</li>
+<li class=""><code>taskforge --config</code> lets you point to a specific config file.</li>
+</ul>
+<p>Check out the <a class="" href="https://missionshrestha.github.io/Docusaurus-Documentation-Practice-Projects/docs/guides/cli-usage/">CLI Usage</a> guide to see all available commands.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="whats-next">What's next<a href="https://missionshrestha.github.io/Docusaurus-Documentation-Practice-Projects/blog/v1-release/#whats-next" class="hash-link" aria-label="Direct link to What's next" title="Direct link to What's next" translate="no">​</a></h2>
+<p>Over the coming weeks we'll be focusing on:</p>
+<ul>
+<li class="">Smoother onboarding for new teams</li>
+<li class="">Deeper integrations with CI providers</li>
+<li class="">More examples and templates in the docs</li>
+</ul>
+<p>If you try the beta, we'd love your feedback. Reach out via the <a class="" href="https://missionshrestha.github.io/Docusaurus-Documentation-Practice-Projects/contact/">Contact</a> page
+and tell us how TaskForge fits into your workflow.</p>]]></content>
+        <author>
+            <name>Alex Rivera</name>
+        </author>
+        <author>
+            <name>TaskForge Team</name>
+        </author>
+        <category label="release" term="release"/>
+        <category label="changelog" term="changelog"/>
+        <category label="cli" term="cli"/>
+        <category label="api" term="api"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Welcome to TaskForge]]></title>
+        <id>https://missionshrestha.github.io/Docusaurus-Documentation-Practice-Projects/blog/welcome/</id>
+        <link href="https://missionshrestha.github.io/Docusaurus-Documentation-Practice-Projects/blog/welcome/"/>
+        <updated>2025-01-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Introducing TaskForge, a developer-first project management platform.]]></summary>
+        <content type="html"><![CDATA[<p>Happy New Year—and welcome to <strong>TaskForge</strong> 🎉</p>
+<p>TaskForge is a project management platform designed specifically for developers
+and technical teams. Instead of forcing you into a UI-only workflow, TaskForge
+meets you where you already work:</p>
+<ul>
+<li class="">A clean, minimal web dashboard</li>
+<li class="">A powerful CLI for automation</li>
+<li class="">A simple, well-documented REST API</li>
+</ul>
+<p>With TaskForge you can:</p>
+<ul>
+<li class="">Spin up new projects in seconds</li>
+<li class="">Manage tasks from your terminal or CI</li>
+<li class="">Keep your team aligned without leaving your dev tools</li>
+</ul>
+<p>If you're curious to try it out, start with the <a class="" href="https://missionshrestha.github.io/Docusaurus-Documentation-Practice-Projects/docs/quickstart/">Quickstart</a>
+and create your first project today.</p>]]></content>
+        <author>
+            <name>TaskForge Team</name>
+            <uri>https://facebook.com/@taskforge</uri>
+        </author>
+        <category label="announcement" term="announcement"/>
+        <category label="product" term="product"/>
+        <category label="beta" term="beta"/>
+    </entry>
+</feed>
